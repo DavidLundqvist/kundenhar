@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+#wrapper{
+    height: calc(100vh);
+    width: calc(100vw);
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 10vh 20vh 1fr 10vh;
+    grid-template-areas: 
+    'nav'
+    'hd'
+    'mn'
+    'ft';
+}
+
+nav{
+    grid-area: nav;
+    background-color: #2ecc71;
+    font-size: 3rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+button{
+    height: auto;
+    padding: 10px;
+    width: 130px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+button:hover{
+    background-color: blue;
+    font-weight: 600;
+}
+
+.products{
+    text-decoration: underline;
+}
+
+header{
+    grid-area: hd;
+    background-color: blue;
+}
+
+main{
+    grid-area: mn;
+    background-color: teal;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+section{
+    background-color: maroon;
+    width: 20vw;
+    height: 60vh;
+    margin: 50px;
+    text-align: center;
+}
+
+footer{
+    grid-area: ft;
+    background-color: khaki;
+}
