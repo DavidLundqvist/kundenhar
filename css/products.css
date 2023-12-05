@@ -56,12 +56,43 @@ main{
     flex-wrap: wrap;
 }
 
+/* CARD FOR EACH PRODUCT */
+
 section{
-    background-color: maroon;
+    background-color: #003919;
     width: 20vw;
     height: 60vh;
     margin: 50px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+img{
+    width: auto;
+    height: 50%;
+    margin: 20px;
+}
+
+h1{
+    background-color: #2ecc71;
+    margin: 0;
+    font-size: 2rem;
+    color: #003919;
+}
+p{
+    background-color: #2ecc71;
+    margin: 0;
+    height: 30%;
+    padding: 5px;
+    color: #003919;
+}
+h2{
+    background-color: #2ecc71;
+    margin: 0;
+    font-size: 2rem;
+    color: #003919;
 }
 
 footer{
