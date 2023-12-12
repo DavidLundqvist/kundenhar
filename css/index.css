@@ -4,6 +4,16 @@ body{
     background-image: url(../img/tree.png);
     background-attachment: fixed;
 }
+
+.symbol{
+    height: 9vh;
+    width: 9vh;
+    z-index: 0;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+
 #wrapper{
     height: calc(100vh);
     width: calc(100vw);
@@ -68,15 +78,18 @@ main{
     background-color: teal;
     padding: 40px;
     display: flex;
-    margin-left: 15px;
-    margin-right: 30px;
-    margin-bottom: 15px;
+    flex-direction: column;
+    margin-right: 15px;
+    border-top: 5px solid black;
 }
 
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     grid-area: ft;
-    background-color: khaki;
-    color: grey;
+    background-color: #003919;
+    color: lightgrey;
     padding-left: 15px;
     padding-right: 30px;
     padding-top: 10px;
@@ -88,4 +101,5 @@ section{
     height: 200px;
     border-radius: 7px;
     border: solid black 5px;
+    margin: 10px;
 }
