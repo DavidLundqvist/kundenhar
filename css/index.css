@@ -30,28 +30,42 @@ body{
 
 .navIndex{
     grid-area: navIndex;
-    background-color: #2ecc71;
+    background-color: #191c19;
     font-size: 3rem;
     display: flex;
     justify-content: right;
     align-items: center;
 }
 
-button{
+a {
     height: auto;
     padding: 10px;
-    width: 130px;
+    width: 100px;
     font-size: 1.5rem;
     border-radius: 25px;
-    margin-left: 60px;
-    margin-right: 60px;
-    background-color: #003919;
-    color: #2ecc71;
+    border: 2px solid #2ecc71;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #191c19;
+    color: #ffff;
+    text-align: center;
+    text-decoration: none;
 }
 
-button:hover{
-    background-color: blue;
-    font-weight: 600;
+a:hover {
+    height: auto;
+    padding: 10px;
+    width: 100px;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background-color: #003919;
+    color: #ffff;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #2ecc71;
+    color: #2ecc71;
 }
 
 .home{
@@ -76,12 +90,49 @@ button:hover{
 
 .mnIndex{
     grid-area: mnIndex;
-    background-color: teal;
+    background-color: #191c19;
     padding: 40px;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin-right: 15px;
     border-top: 5px solid black;
+}
+
+.sectionIndex{
+    background-color: magenta;
+    width: 40vw;
+    height: 200px;
+    border-radius: 25px;
+    margin: 10px;
+}
+
+.section1{
+    order: 1;
+    background-image: url(../img/leaves.jpg);
+}
+.section2{
+    order: 4;
+    background-image: url(../img/dirt.jpg);
+}
+.section3{
+    order: 5;
+    background-image: url(../img/berries.jpg);
+}
+.text1{
+    order: 2;
+}
+.text2{
+    order: 3;
+}
+.text3{
+    order: 6;
+}
+.text1, .text2, .text3{
+    width: 40vw;
+    height: 200px;
+    border-radius: 25px;
+    border: 5px solid #2ecc71;
+    margin: 10px;
 }
 
 footer{
@@ -96,14 +147,6 @@ footer{
     padding-top: 10px;
 }
 
-section{
-    background-color: magenta;
-    width: 33%;
-    height: 200px;
-    border-radius: 7px;
-    border: solid black 5px;
-    margin: 10px;
-}
 /* ////////////////////////////////////////////// */
 /* PRODUCTS PAGE */
 
@@ -118,19 +161,10 @@ body{
     grid-template-columns: 100vw;
     grid-template-rows: 10vh 20vh 1fr 10vh;
     grid-template-areas: 
-    'navProducts'
+    'navIndex'
     'hdProducts'
     'mnProducts'
     'ft';
-}
-
-.navProducts{
-    grid-area: navProducts;
-    background-color: #2ecc71;
-    font-size: 3rem;
-    display: flex;
-    justify-content: right;
-    align-items: center;
 }
 
 .products{
@@ -139,59 +173,207 @@ body{
 
 .hdProducts{
     grid-area: hdProducts;
-    background-color: blue;
-    font-size: 3rem;
-    text-align: center;
+    background-color: #003919;
+    color: #2ecc71;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .mnProducts{
     grid-area: mnProducts;
-    background-color: teal;
+    background-color: #191c19;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 /* CARD FOR EACH PRODUCT */
-section {
-    background-color: #003919;
+.sectionProducts {
     width: 20vw;
     height: 60vh;
     margin: 50px;
-    text-align: center;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border: solid black 5px;
+    color: #ffff;
+    border: solid 5px;
+    border-radius: 20px;
+    border-color: #2ecc71;
 }
 
-section h1 {
+.sectionProducts:hover h2{
+    color: #2ecc71;
+}
+
+.sectionProducts h1 {
     height: 10%;
     font-size: 1.75rem;
     line-height: 1;
-}
-
-section img {
-    height: 50%;
-    width: auto;
-}
-
-section p {
-    height: 30%;
-    font-size: 1.3rem;
-}
-
-section h2 {
-    height: 10%;
-    font-size: 1.75rem;
-}
-
-section h2, p, h1{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-    background-color: #2ecc71;
+}
+
+.sectionProducts img {
+    height: 50%;
+    width: auto;
+    margin: 10px;
+}
+
+.sectionProducts p {
+    height: 30%;
+    font-size: 1.3rem;
+    display: flex;
+    margin: 0;
+    color: #ffff;
+    margin-left: 20px;
+}
+
+.sectionProducts h2 {
+    height: 10%;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #ffff;
+    margin-left: 20px;
 }
 /* ////////////////////////////////////////////// */
 /* CONTACT PAGE */
+
+#wrapperContact{
+    height: calc(100vh);
+    width: calc(100vw);
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows: 10vh 10vh 80vh 10vh;
+    grid-template-areas: 
+    'navIndex navIndex'
+    'hdContact asContact'
+    'mnContact asContact'
+    'ft ft';
+}
+
+.contact{
+    text-decoration: underline;
+}
+
+.hdContact{
+    grid-area: hdContact;
+    background-color: #003919;
+    color: #2ecc71;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.asContact{
+    grid-area: asContact;
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.information{
+    width: 40vw;
+    height: 80vh;
+    border: solid 5px;
+    border-radius: 20px;
+    border-color: #2ecc71;
+    background-color: #191c19;
+    color: #ffff;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+}
+.Name{
+    width: 48%;
+}
+.smallInput{
+    width: 87.5%;
+    font-size: 1.5rem;
+}
+
+.otherInput{
+    width: 90%;
+    font-size: 1.5rem;
+}
+.largeInput{
+    width: 100%;
+    font-size: 1.5rem;
+}
+.msgTextBox{
+    width: 100%;
+    font-size: 1.5rem;
+    height: 6rem;
+    background-color: #191c19;
+    border: none;
+    border-bottom: #2ecc71 3px solid;
+    color: white;
+    outline: none;
+}
+
+input{
+    background-color: #191c19;
+    border: none;
+    border-bottom: #2ecc71 3px solid;
+    color: white;
+    outline: none;
+}
+
+button{
+    height: 50px;
+    width: 100px;
+    font-size: 1.5rem;
+    border: 2px solid #2ecc71;
+    border-radius: 25px;
+    color: white;
+    background-color: #191c19;
+}
+button:hover{
+    height: 50px;
+    width: 100px;
+    font-size: 1.5rem;
+    border: 2px solid #2ecc71;
+    border-radius: 25px;
+    color: #2ecc71;
+    background-color: #003919;
+}
+
+.mnContact{
+    grid-area: mnContact;
+    background-color: #191c19;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sectionContact{
+    width: 70%;
+    height: 35%;
+    background-color:#191c19;
+    border: solid 5px;
+    border-radius: 20px;
+    border-color: #2ecc71; 
+    padding: 20px;
+    box-sizing: border-box;
+    color: #ffff;
+}
+
+.contactText{
+    font-size: 1.3rem;
+    margin: 0;
+}
+li{
+    font-size: 1.2rem;
+}
+h2{
+    margin: 0;
+}

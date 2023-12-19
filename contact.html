@@ -5,20 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GreenGrove</title>
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div id="wrapper">
-        <nav>
-            <a href="index.html"><button class="home" >Home</button></a>
-            <a href="products.html"><button class="products" >Products</button></a>
-            <a href="contact.html"><button class="contact">Contact</button></a>
+    <img src="img/symbol.png" alt="logo" class="symbol">
+    <div id="wrapperContact">
+        <nav class="navIndex">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html" class="contact">Contact</a>
         </nav>
-        <header>
+        <header class="hdContact">
+            <h1>Contact Us!</h1>
         </header>
-        <main>
+        <aside class="asContact">
+            <div class="information">
+                <div class="Name">
+                    <h3>First name</h3>
+                    <input type="text" class="smallInput">
+                </div>
+                <div class="Name">
+                    <h3 class="name last">Last name</h3>
+                    <input type="text" class="smallInput">
+                </div>
+                <div class="otherInput">
+                    <h3>E-Mail</h3>
+                    <input type="text" class="largeInput">
+                </div>
+                <div class="otherInput">
+                    <h3>Message</h3>
+                    <textarea class="msgTextBox"></textarea>
+                </div>
+                <button>Submit</button>
+            </div>
+        </aside>
+        <main class="mnContact">
+            <section class="sectionContact">
+                <p class="contactText">
+                    <u><b>Welcome to our Contact Us page at GreenGrove!</b></u> Whether you have questions about our 
+                    products, need assistance, or want to provide feedback, we're here for you. Your 
+                    inquiries help us improve and ensure your satisfaction. Thank you for choosing GreenGrove,
+                     where your voice matters.
+                </p>
+            </section>
+            <section class="sectionContact">
+                <h2>
+                    Most common reasons to contact
+                </h2>
+                <ul>
+                    <li>Product Information</li>
+                    <li>Order Status and Tracking</li>
+                    <li>Technical Support</li>
+                    <li>Returns and Exchanges</li>
+                    <li>Customization Options</li>
+                </ul>
+            </section>
         </main>
-        <footer></footer>
+        <footer>
+            © 2023 GreenGrove. All rights reserved. 
+            Embrace a sustainable future with our eco-friendly 
+            products. Designed with nature in mind. Crafted for you.
+        </footer>
     </div>
 </body>
 </html>
